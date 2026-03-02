@@ -1,4 +1,4 @@
-const API_URL = "/api";
+const API_URL = "https://proyectotodoapp-back.onrender.com/api";
 
 async function loadCategorias() {
   try {

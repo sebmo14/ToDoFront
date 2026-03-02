@@ -1,4 +1,4 @@
-const API_URL = "/api";
+const API_URL = "https://proyectotodoapp-back.onrender.com/api";
 const id = new URLSearchParams(window.location.search).get("id");
 
 async function loadTarea() {
