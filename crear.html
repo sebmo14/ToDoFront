@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crear nueva tarea">
+  <title>ToDo App — Crear Tarea</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo"><span>📋</span> ToDo App</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tareas.html">Tareas</a></li>
+        <li><a href="crear.html" class="active">Crear</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-card">
+      <h1>➕ Nueva Tarea</h1>
+      <form id="form-crear">
+        <div class="form-group">
+          <label for="titulo">Título *</label>
+          <input type="text" id="titulo" required placeholder="Escribe el título">
+        </div>
+        <div class="form-group">
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" placeholder="Detalles adicionales…"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="prioridad">Prioridad</label>
+          <select id="prioridad">
+            <option value="baja">Baja</option>
+            <option value="media" selected>Media</option>
+            <option value="alta">Alta</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="categoriaId">Categoría</label>
+          <select id="categoriaId" required>
+            <option value="">Cargando categorías...</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">💾 Guardar</button>
+          <a href="tareas.html" class="btn btn-secondary">Cancelar</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/crear.js"></script>
+</body>
+</html>
